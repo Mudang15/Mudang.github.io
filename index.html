@@ -81,7 +81,7 @@
             <a class="navbar-brand" href="#">Mudang</a>
             <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
             <div class="menu-list" id="menu-list">
-                <a class="navbar-brand" href="https://mudang15.github.io/mudang/" target="_blank" rel="noopener noreferrer">รัฐธรรมนูญ</a>
+                <a href="https://mudang15.github.io/mudang/" target="_blank" rel="noopener noreferrer">รัฐธรรมนูญ</a>
                 <a href="organic-law.html">พระราชบัญญัติประกอบรัฐธรรมนูญ</a>
                 <a href="act.html">พระราชบัญญัติ</a>
                 <a href="decree.html">พระราชกำหนด</a>
@@ -166,13 +166,14 @@
 
     <!-- JavaScript -->
     <script>
-        const hamburgerMenu = document.getElementById('hamburger-menu');
+	    const hamburgerMenu = document.getElementById('hamburger-menu');
         const menuList = document.getElementById('menu-list');
 
         hamburgerMenu.addEventListener('click', () => {
             menuList.classList.toggle('show');
-            hamburgerMenu.textContent = menuList.classList.contains('show') ? '×' : '☰';
         });
+
+        
     </script>
 </body>
 </html>
